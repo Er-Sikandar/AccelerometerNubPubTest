@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "lengthOfLongestSubstring: "+lengthOfLongestSubstring(str));
 
 
-        startActivity(new Intent(this,AccelerometerActivity.class));
+        startActivity(new Intent(this,ChartActivity.class));
 
     }
     public int[] twoSum(int[] nums, int target) {

@@ -2,6 +2,9 @@ package com.testdemo.apps;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,20 +37,27 @@ private ActivityChartBinding binding;
         binding=ActivityChartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         lineChart=binding.chart1;
-        setupLineChart(); lineChart.setDrawGridBackground(false);
-        lineChart.setDrawBorders(false);
+       /* setupLineChart(); lineChart.setDrawGridBackground(false);
+        lineChart.setDrawBorders(false);*/
 
         // Remove description label
-        Description description = new Description();
+     /*   Description description = new Description();
         description.setText("");
-        lineChart.setDescription(description);
+        lineChart.setDescription(description);*/
 
         // Customize legend
-        Legend legend = lineChart.getLegend();
+        /*Legend legend = lineChart.getLegend();
         legend.setForm(Legend.LegendForm.LINE);
         legend.setTextColor(Color.BLACK);
-        loadChartData();
+        loadChartData();*/
+
+
+        binding.etName.setLongClickable(false);
+
+
     }
+
+
     private void setupLineChart() {
         lineChart.setDrawGridBackground(false);
         lineChart.setDrawBorders(false);
